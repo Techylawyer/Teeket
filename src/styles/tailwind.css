@@ -6,14 +6,25 @@
 @tailwind utilities;
 
 .Container {
-  @apply grid grid-cols-1 grid-rows-5;
+  @apply grid grid-cols-1 grid-rows-5 h-full;
+  z-index: 0;
+}
+
+.Container h2 {
+  @apply font-login m-loginM text-2xl;
 }
 
 .Header {
-  @apply row-span-2 flex justify-between;
+  @apply row-span-2 flex p-2 justify-around drop-shadow-md;
+  z-index: 2;
+  background-color: #ffff;
 }
 .Header img {
-  width: 367x;
+  @apply md:w-logo1 mr-1.5  mb-1.5 mt-2;
+}
+
+.Header button {
+  @apply w-button mr-1.5  mb-1.5 mt-2 rounded-xl text-base;
 }
 
 .Section {

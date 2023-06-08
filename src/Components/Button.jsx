@@ -8,8 +8,9 @@ export function Button(props) {
         width: props.width,
         color: props.color,
       }}
+      type="submmit"
     >
-      {props.lable}
+     {props.label}
     </button>
   );
 }
