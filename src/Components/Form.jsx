@@ -18,6 +18,7 @@ export function Form() {
           value={inputValue}
           onChange={handleEvent}
           name="email"
+          autoComplete="off"
         />
         <br />
         <Button label="Continue with email" bg="#0052F6" color="#FFFFFF" />

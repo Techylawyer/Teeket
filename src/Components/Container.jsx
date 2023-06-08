@@ -12,12 +12,12 @@ export function Container() {
       <Header />
       <div className="Section">
         <h2>Login Screen signup to continue</h2>
-        <Button label="Continue with Google" />
+        <Button label="Continue with Google"/>
         <div className="Horizontal">
           <hr /> <span>Or</span> <hr />
         </div>
         <Form />
-        <Footer/>
+        <Footer />
       </div>
     </div>
   );

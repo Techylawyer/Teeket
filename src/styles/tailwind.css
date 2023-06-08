@@ -35,6 +35,11 @@
   font-size: 22px;
 }
 
+.Section a {
+  @apply flex justify-center items-center active:outline-0 rounded-lg w-google p-3 border-2;
+  font-size: 20px;
+}
+
 .Input {
   @apply flex flex-col justify-center items-center;
 }
