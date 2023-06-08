@@ -5,16 +5,19 @@ module.exports = {
     extend: {
       width: {
         logo1: "240px",
-        button: "0pxpx",
-
+        button: "200px",
+        google:"35%",
       },
       fontFamily: {
         login: ["Manrope"],
       },
-      margin:{
-        loginM:"6rem",
-      }
-
+      margin: {
+        loginM: "6rem",
+        input: "30px",
+      },
+      height: {
+        buttonH: "70px",
+      },
     },
   },
   plugins: [],

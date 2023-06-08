@@ -1,5 +1,5 @@
 /* src/styles/tailwind.css */
-@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&family=Manrope:wght@500&family=Poppins:ital,wght@0,500;0,700;1,400;1,700;1,800&family=Roboto:ital@1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&family=Manrope:wght@400;500&family=Poppins:ital,wght@0,500;0,700;1,400;1,700;1,800&family=Roboto:ital@1&display=swap");
 
 /* ! tailwindcss v3.3.2 | MIT License | https://tailwindcss.com */
 
@@ -483,8 +483,14 @@ video {
 .relative{
   position: relative;
 }
+.row-span-1{
+  grid-row: span 1 / span 1;
+}
 .row-span-2{
   grid-row: span 2 / span 2;
+}
+.m-auto{
+  margin: auto;
 }
 .m-loginM{
   margin: 6rem;
@@ -497,6 +503,9 @@ video {
 }
 .mb-2{
   margin-bottom: 0.5rem;
+}
+.mb-input{
+  margin-bottom: 30px;
 }
 .ml-2{
   margin-left: 0.5rem;
@@ -512,6 +521,12 @@ video {
 }
 .mt-2{
   margin-top: 0.5rem;
+}
+.mt-4{
+  margin-top: 1rem;
+}
+.mt-input{
+  margin-top: 30px;
 }
 .block{
   display: block;
@@ -531,8 +546,14 @@ video {
 .hidden{
   display: none;
 }
+.h-buttonH{
+  height: 70px;
+}
 .w-button{
-  width: 0pxpx;
+  width: 200px;
+}
+.w-google{
+  width: 35%;
 }
 .w-logo1{
   width: 240px;
@@ -552,8 +573,26 @@ video {
 .grid-rows-5{
   grid-template-rows: repeat(5, minmax(0, 1fr));
 }
+.flex-row{
+  flex-direction: row;
+}
+.flex-col{
+  flex-direction: column;
+}
+.items-end{
+  align-items: flex-end;
+}
+.items-center{
+  align-items: center;
+}
+.justify-center{
+  justify-content: center;
+}
 .justify-around{
   justify-content: space-around;
+}
+.rounded-lg{
+  border-radius: 0.5rem;
 }
 .rounded-xl{
   border-radius: 0.75rem;
@@ -564,8 +603,22 @@ video {
 .p-2{
   padding: 0.5rem;
 }
+.p-3{
+  padding: 0.75rem;
+}
 .font-login{
   font-family: Manrope;
+}
+.text-base{
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+.font-light{
+  font-weight: 300;
+}
+.text-gray-950{
+  --tw-text-opacity: 1;
+  color: rgb(3 7 18 / var(--tw-text-opacity));
 }
 .underline{
   text-decoration-line: underline;
@@ -605,7 +658,7 @@ video {
 }
 
 .Header{
-  grid-row: span 2 / span 2;
+  grid-row: span 1 / span 1;
   display: flex;
   justify-content: space-around;
   padding: 0.5rem;
@@ -618,6 +671,7 @@ video {
   margin-right: 0.375rem;
   margin-bottom: 0.375rem;
   margin-top: 0.5rem;
+  height: 70px;
 }
 @media (min-width: 768px){
 
@@ -630,14 +684,82 @@ video {
   margin-right: 0.375rem;
   margin-bottom: 0.375rem;
   margin-top: 0.5rem;
-  width: 0pxpx;
+  height: 70px;
+  width: 200px;
   border-radius: 0.75rem;
   font-size: 1rem;
   line-height: 1.5rem;
+  --tw-drop-shadow: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
 .Section{
-  grid-row: span 3 / span 3;
+  grid-row: span 4 / span 4;
+}
+.Section button{
+  width: 35%;
+  border-radius: 0.5rem;
+  border-width: 2px;
+  padding: 0.75rem;
+}
+.Section button:active{
+  outline-width: 0px;
+}
+.Section button {
+  font-size: 22px;
+}
+.Input{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.Input input{
+  margin-bottom: 30px;
+  margin-top: 30px;
+  width: 35%;
+  border-radius: 0.5rem;
+  padding: 0.75rem;
+  background-color: #ededed;
+}
+
+.Input button{
+  border-radius: 0.5rem;
+  border-width: 0px;
+  font-weight: 300;
+  font-size: 20px;
+}
+
+.Horizontal{
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.Horizontal span{
+  margin-top: 1rem;
+}
+
+.Horizontal hr {
+  width: 25%;
+}
+
+.Footer{
+  margin-top: 1rem;
+  padding-bottom: 0.75rem;
+  font-family: Manrope;
+}
+
+Footer a{
+  font-weight: 600;
+  color: #000;
+}
+
+.active\:outline-0:active{
+  outline-width: 0px;
 }
 
 @media (min-width: 768px){
