@@ -6,7 +6,7 @@ module.exports = {
       width: {
         logo1: "240px",
         button: "200px",
-        google:"35%",
+        google:"40%",
       },
       fontFamily: {
         login: ["Manrope"],

@@ -34,6 +34,7 @@
   @apply active:outline-0 rounded-lg w-google p-3 border-2;
   font-size: 22px;
 }
+
 .Input {
   @apply flex flex-col justify-center items-center;
 }
