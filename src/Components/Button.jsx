@@ -10,7 +10,8 @@ export function Button(props) {
       }}
       type="submmit"
     >
-     {props.label}
+      {props.img && <img src={props.img} alt="logo" />}
+     <span> {props.label}</span>
     </button>
   );
 }

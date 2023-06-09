@@ -600,6 +600,9 @@ video {
 .border{
   border-width: 1px;
 }
+.border-2{
+  border-width: 2px;
+}
 .p-2{
   padding: 0.5rem;
 }
@@ -757,6 +760,25 @@ video {
 Footer a{
   font-weight: 600;
   color: #000;
+}
+
+.Section a.Google{
+  margin: auto;
+  display: flex;
+  width: 40%;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  border-width: 2px;
+  padding: 0.75rem;
+}
+
+.Section a.Google:active{
+  outline-width: 0px;
+}
+
+.Section a.Google span {
+  font-size: 18px;
 }
 
 .active\:outline-0:active{

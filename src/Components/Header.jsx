@@ -5,7 +5,7 @@ export function Header() {
   return (
     <header className="Header">
       <img src={teeket} alt="logo" />
-      <Button bg="#001133" label="Menu" color="#FFFFFF" />
+      <Button bg="#001133" label="Menu" color="#FFFFFF"/>
     </header>
   );
 }
