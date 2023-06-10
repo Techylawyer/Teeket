@@ -62,7 +62,7 @@
 }
 
 .Footer {
-  @apply mt-4 font-login pb-3;
+  @apply mt-4 font-login;
 }
 
 Footer a {
