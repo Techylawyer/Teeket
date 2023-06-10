@@ -5,8 +5,9 @@ module.exports = {
     extend: {
       width: {
         logo1: "240px",
-        button: "200px",
-        google:"40%",
+        button: "100px",
+        google: "40%",
+        googleS: "80%",
       },
       fontFamily: {
         login: ["Manrope"],
@@ -17,6 +18,9 @@ module.exports = {
       },
       height: {
         buttonH: "70px",
+      },
+      fontSize: {
+        fontLength: "20px",
       },
     },
   },

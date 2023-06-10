@@ -11,7 +11,7 @@
 }
 
 .Container h2 {
-  @apply font-login m-loginM text-2xl;
+  @apply font-login m-loginM text-2xl max-sm:text-fontLength;
 }
 
 .Header {
@@ -31,7 +31,7 @@
   @apply row-span-4;
 }
 .Section button {
-  @apply active:outline-0 rounded-lg w-google p-3 border-2;
+  @apply max-sm:w-googleS active:outline-0 rounded-lg w-google p-3 border-2;
   font-size: 22px;
 }
 
@@ -40,7 +40,7 @@
 }
 
 .Input input {
-  @apply mb-input mt-input w-google rounded-lg p-3;
+  @apply mb-input mt-input  max-sm:w-googleS w-google rounded-lg p-3;
   background-color: #ededed;
 }
 
@@ -71,7 +71,7 @@ Footer a {
 }
 
 .Section a.Google {
-  @apply active:outline-0 rounded-lg p-3 border-2 flex justify-center items-center w-google m-auto;
+  @apply active:outline-0 rounded-lg p-3 border-2 flex justify-center items-center max-sm:w-googleS w-google m-auto;
 }
 
 .Section a.Google span {

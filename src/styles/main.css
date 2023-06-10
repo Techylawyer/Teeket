@@ -550,10 +550,13 @@ video {
   height: 70px;
 }
 .w-button{
-  width: 200px;
+  width: 100px;
 }
 .w-google{
   width: 40%;
+}
+.w-googleS{
+  width: 80%;
 }
 .w-logo1{
   width: 240px;
@@ -600,6 +603,9 @@ video {
 .border{
   border-width: 1px;
 }
+.border-0{
+  border-width: 0px;
+}
 .border-2{
   border-width: 2px;
 }
@@ -611,6 +617,10 @@ video {
 }
 .font-login{
   font-family: Manrope;
+}
+.text-2xl{
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 .text-base{
   font-size: 1rem;
@@ -660,6 +670,13 @@ video {
   line-height: 2rem;
 }
 
+@media not all and (min-width: 640px){
+
+  .Container h2{
+    font-size: 20px;
+  }
+}
+
 .Header{
   grid-row: span 1 / span 1;
   display: flex;
@@ -688,7 +705,7 @@ video {
   margin-bottom: 0.375rem;
   margin-top: 0.5rem;
   height: 70px;
-  width: 200px;
+  width: 100px;
   border-radius: 0.75rem;
   font-size: 1rem;
   line-height: 1.5rem;
@@ -708,6 +725,12 @@ video {
 .Section button:active{
   outline-width: 0px;
 }
+@media not all and (min-width: 640px){
+
+  .Section button{
+    width: 80%;
+  }
+}
 .Section button {
   font-size: 22px;
 }
@@ -725,6 +748,16 @@ video {
   width: 40%;
   border-radius: 0.5rem;
   padding: 0.75rem;
+}
+
+@media not all and (min-width: 640px){
+
+  .Input input{
+    width: 80%;
+  }
+}
+
+.Input input {
   background-color: #ededed;
 }
 
@@ -777,12 +810,26 @@ Footer a{
   outline-width: 0px;
 }
 
+@media not all and (min-width: 640px){
+
+  .Section a.Google{
+    width: 80%;
+  }
+}
+
 .Section a.Google span {
   font-size: 18px;
 }
 
 .active\:outline-0:active{
   outline-width: 0px;
+}
+
+@media not all and (min-width: 640px){
+
+  .max-sm\:w-googleS{
+    width: 80%;
+  }
 }
 
 @media (min-width: 768px){
