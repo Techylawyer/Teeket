@@ -10,10 +10,10 @@ import '../src/styles/LandingPage.css'
 
 function LandingPage() {
   return (
-    <main className="flex justify-center items-center w-4">
-      <article className="main-div container text-white">
+    <main className="flex justify-center items-center w-full">
+      <article className="main-div text-white p-12">
         <section id="logo" className="">
-          <img src={logo} alt="" className="d-block mx-auto w-72 my-8" />
+          <img src={logo} alt="" className="d-block mx-auto w-2/4 my-8" />
         </section>
         <section
           id="images"
@@ -35,10 +35,10 @@ function LandingPage() {
             <img src={img2} alt="" />
           </div>
         </section>
-        <section id="text" className="text-center my-8">
+        <section id="text" className="text-center my-6 p-8">
           <p>
             Your one stop platform to create, manage and promote your events at
-            your convenience
+            your convenience.
           </p>
         </section>
 
@@ -46,7 +46,7 @@ function LandingPage() {
           id="buttons"
           className="flex flex-col justify-center items-center"
         >
-          <div className="my-8">
+          <div className="my-6">
             <button
               type="button"
               className="btn-1 w-72 bg-blue-800 px-8 py-4 rounded-xl"

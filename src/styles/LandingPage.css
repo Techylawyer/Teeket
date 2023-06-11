@@ -6,10 +6,8 @@
 }
 
 .main-div {
-    background: url(../images/bg-image.png);
-}
-
-article {
+    background-image: linear-gradient(#030A2E, #050C2F),
+    url(../images/bg-image.png) no-repeat no-repeat;
     height: 100vh;
     width: 100vw;
 }
