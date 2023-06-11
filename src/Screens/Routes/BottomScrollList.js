@@ -24,7 +24,7 @@ function BottomScrollList() {
   };
 
   return (
-    <div>
+    <div className='pb-8'>
       <div className='relative flex items-center '>
         <MdChevronLeft className='opacity-50 cursor-pointer hover:opacity-100' onClick={slideLeft} size={20} />
         <div
