@@ -9,8 +9,34 @@ import Image1 from '../imgs/footerimgs/Image1.jpg'
 import { SportData } from './SportEventList';
 import Footer from './Footer';
 import Sport2 from '../imgs/Sport2.jpg'
+import {useState} from 'react';
 
 function EventListingPage() {
+    const [searchVal, setSearchVal] = useState('');
+    const [searchResults, setSearchResults] = useState(Data);
+
+
+     const filterEvents = (e) => {
+  const value = e.target.value;
+  setSearchVal(value);
+  
+  if (value === '') {
+    setSearchResults(Data);
+  } else {
+    const filteredData = Data.filter((event) =>
+      event.title.toLowerCase().includes(value.toLowerCase())
+    );
+    setSearchResults(filteredData);
+  }
+};
+
+
+    const clearSearchBar = () => {
+        setSearchVal('');
+        setSearchResults(Data);
+    };
+
+
   return (
     <div>
       <header className='flex items-center justify-between mx-2'>
@@ -31,12 +57,12 @@ function EventListingPage() {
       placeholder='Search all events'
       className='md:w-full w-100 md:h-16 h-8 pr-8 pl-8 rounded-full shadow'
       style={{ paddingLeft: 18, outline: 'none' }}
-      // value={searchval}
-      // onChange={filterEvents}
+      value={searchVal}
+      onChange={filterEvents}
     />
   </section>
   <section className='flex justify-center items-center'>
-    <img src={SearchButton} alt='searchButton' className='md:w-16 w-8 md:h-16 h-8' />
+    <img src={SearchButton} alt='searchButton' className='md:w-16 w-8 md:h-16 h-8' onClick={clearSearchBar}/>
   </section>
 </div>
       </div>
@@ -63,7 +89,7 @@ function EventListingPage() {
   <div className='my-8 mx-4'>
     <h1 className='md:text-center text-start md:text-4xl text-xl text-bold'>Upcoming events </h1>
     <div className='mt-6'>
-      {Data.map((item) => (
+      {searchResults.map((item) => (
             <div key={item.id} className='w-full rounded-lg py-4 px-4 flex flex-row justify-between' style={{ backgroundColor: '#DDDDDD', paddingBottom:10, marginBottom: 8}}>
               <section>
                 <div>
