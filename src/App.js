@@ -4,7 +4,7 @@ import './styles/main.css';
 import Layout from "./Screens/Routes/Layout";
 import LoginPage from "./Screens/LoginPage";
 import Home from "./Screens/Home";
-import LandingPage from "./Screens/LandingPage";
+import LandingPage from "./LandingPage";
 import EventListingPage from "./Screens/EventListingPage";
 
 
