@@ -1,19 +1,19 @@
 import React from 'react';
 import Image1 from '../imgs/footerimgs/Image1.jpg';
-import img2 from '../imgs/footerimgs/img2.jpg';
-import img3 from '../imgs/footerimgs/img3.jpg';
-import image4 from '../imgs/footerimgs/image4.jpg';
-import img5 from '../imgs/footerimgs/img5.jpg';
+// import img2 from '../imgs/footerimgs/img2.jpg';
+// import img3 from '../imgs/footerimgs/img3.jpg';
+// import image4 from '../imgs/footerimgs/image4.jpg';
+// import img5 from '../imgs/footerimgs/img5.jpg';
 
 function Footer() {
   return (
       <div className='pt-12' style={{ backgroundColor: '#001133' }}>
         <div className='pt-12 bg-gradient-to-tr from-blue-700 to-pink-800 rounded-lg pb-24 w-100 mx-4'>
         <section>
-          <div className='flex flex-row'>
-            <img src={Image1} alt='img1' className='md:w-24 w-16 md:h-16 h-8 rounded-lg'/>
-            <div className='bg-pink-800 rounded-lg '>
-          <button type="submit" className="text-white block md:text-lg text-sm flex items-center justify-center block md:h-8 h-4 md:w-12 w-6 py-6 px-6">
+          <div className='flex flex-row justify-center'>
+            <img src={Image1} alt='img1' className='md:w-32 w-24 md:h-32 h-16 rounded-lg '/>
+            <div className='bg-pink-800 rounded-lg md:mx-6 mx-2' style={{height: 30, alignContent: 'center'}}>
+          <button type="submit" className="text-white block md:text-lg text-sm flex items-center justify-center block md:w-24 w-16 py-2 px-2" >
             #Secure
           </button>
             </div>
