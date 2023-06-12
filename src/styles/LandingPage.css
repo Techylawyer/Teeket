@@ -1,13 +1,14 @@
-
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.main-div {
-    background-image: linear-gradient(#030A2E, #050C2F),
-    url(../images/bg-image.png) no-repeat no-repeat;
-    height: 100vh;
-    width: 100vw;
+main {
+   background-image: linear-gradient(
+      180deg,
+      rgba(5, 12, 47, 1),
+      rgba(3, 11, 48, 0.9)
+    ),
+    url(../images/bg-image.png);
 }

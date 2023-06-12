@@ -10,32 +10,21 @@ import '../src/styles/LandingPage.css'
 
 function LandingPage() {
   return (
-    <main className="flex justify-center items-center w-full">
-      <article className="main-div text-white p-12">
-        <section id="logo" className="">
-          <img src={logo} alt="" className="d-block mx-auto w-2/4 my-8" />
+    <main className="w-screen h-screen flex justify-center items-center text-base text-white">
+      <article className="px-8">
+        <section id="logo">
+          <img src={logo} alt="" className="d-block mx-auto w-4/12 my-8" />
         </section>
-        <section
-          id="images"
-          className="grid grid-cols-5 grid-rows-2 grid-flow-row gap-4 justify-stretch"
-        >
-          <div>
-            <img src={img1} alt="" />
-          </div>
-          <div className="col-span-2">
-            <img src={frame1} alt="" />
-          </div>
-          <div className="row-span-2 col-span-2">
-            <img src={frame3} alt="" />
-          </div>
-          <div className="col-span-2">
-            <img src={frame2} alt="" />
-          </div>
-          <div>
-            <img src={img2} alt="" />
-          </div>
+
+        <section id="images" className="grid grid-cols-5 grid-rows-2 gap-3">
+          <img src={img1} alt="first" />
+          <img src={frame1} alt="second" className="col-span-2" />
+          <img src={frame3} alt="third" className="row-span-2 col-span-2" />
+          <img src={frame2} alt="fourth" className="col-span-2" />
+          <img src={img2} alt="fifth" />
         </section>
-        <section id="text" className="text-center my-6 p-8">
+
+        <section id="text" className="text-center m-8">
           <p>
             Your one stop platform to create, manage and promote your events at
             your convenience.
@@ -46,10 +35,10 @@ function LandingPage() {
           id="buttons"
           className="flex flex-col justify-center items-center"
         >
-          <div className="my-6">
+          <div className="mb-8">
             <button
               type="button"
-              className="btn-1 w-72 bg-blue-800 px-8 py-4 rounded-xl"
+              className="btn-1 w-72 bg-blue-500 px-8 py-4 rounded-xl"
             >
               Create an event
             </button>
