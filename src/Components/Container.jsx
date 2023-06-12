@@ -5,7 +5,6 @@ import { Form } from "./Form";
 import { Header } from "./Header";
 import { Horizontal } from "./HorizontalRule";
 import { Footer } from "./Footer";
-import { signIn } from "../firebase-config.js";
 import Googlei from "../Images/Googlei.png";
 import {toast} from 'react-toastify';
 import {useNavigate} from 'react-router-dom';
