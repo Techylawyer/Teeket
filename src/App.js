@@ -8,8 +8,6 @@ import LandingPage from "./LandingPage";
 import EventListingPage from "./Screens/EventListingPage";
 
 
-
-
 function App() {
   return (
     <BrowserRouter>
@@ -22,7 +20,7 @@ function App() {
         </Route>
       </Routes>
     </BrowserRouter>
-  )
+  );
 }
 
 export default App;
