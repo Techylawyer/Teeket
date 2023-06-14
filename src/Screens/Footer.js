@@ -1,11 +1,16 @@
 import React from 'react';
 import Image1 from '../imgs/footerimgs/Image1.jpg';
+
 // import img2 from '../imgs/footerimgs/img2.jpg';
 // import img3 from '../imgs/footerimgs/img3.jpg';
 // import image4 from '../imgs/footerimgs/image4.jpg';
 // import img5 from '../imgs/footerimgs/img5.jpg';
 
+import {useNavigate} from 'react-router-dom';
+
 function Footer() {
+  const navigate = useNavigate();
+
   return (
       <div className='pt-12' style={{ backgroundColor: '#001133' }}>
         <div className='pt-12 bg-gradient-to-tr from-blue-700 to-pink-800 rounded-lg pb-24 w-100 mx-4'>
@@ -25,7 +30,10 @@ function Footer() {
         <h2 className='md:text-lg text-sm text-white flex justify-center mx-2' >other attendees at no cost.</h2>
           </div>
           <div className=' flex justify-center items-center py-8'>
-          <button type="submit" className="bg-white text-blue-500 block text-bold md:text-xl text-lg flex items-center justify-center block rounded-lg md:h-14 h-12 md:w-1/4 w-1/2 py-6 px-6">
+          <button 
+          onClick={() => navigate('/EventListing')}
+          style={{backgroundColor: 'white'}}
+           type="submit" className="text-blue-500 block text-bold md:text-xl text-lg flex items-center justify-center block rounded-lg md:h-14 h-12 md:w-1/4 w-1/2 py-6 px-6">
             Book an event
           </button>
           </div>

@@ -10,10 +10,12 @@ import { SportData } from './SportEventList';
 import Footer from './Footer';
 import Sport2 from '../imgs/Sport2.jpg'
 import {useState} from 'react';
+import {useNavigate} from 'react-router-dom';
 
 function EventListingPage() {
     const [searchVal, setSearchVal] = useState('');
     const [searchResults, setSearchResults] = useState(Data);
+    const navigate = useNavigate();
 
 
      const filterEvents = (e) => {
@@ -39,7 +41,7 @@ function EventListingPage() {
 
   return (
     <div>
-      <header className='flex items-center justify-between mx-2'>
+      <header className='flex items-center justify-between mx-2 mt-2'>
         <img className='md:h-14 md:w-20 h-10 w-16' src={TeeketLogo} alt='teeketLogo' />
         <button
           className='md:bg-green-300 bg-blue-500 text-white md:p-4 p-2 rounded-lg'
@@ -153,7 +155,9 @@ function EventListingPage() {
     </div>
     </div>
     <div className='mx-4'>
-           <button type="submit" className=" px-4 py-2 block md:text-xl text-lg rounded-lg md:h-14 h-12 w-full mx-auto my-8" 
+           <button 
+           onClick={() => navigate('/Home')}
+           type="submit" className=" px-4 py-2 block md:text-xl text-lg rounded-lg md:h-14 h-12 w-full mx-auto my-8" 
            style={{backgroundColor: '#E1E4EB'}}>
             Discover More
           </button>
