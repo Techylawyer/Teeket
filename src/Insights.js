@@ -99,7 +99,7 @@ function Insights() {
                 alt="top referrer"
                 className="rounded-full w-2/12"
               />
-              <p className="break-normal">daniel023@gmail.com</p>
+              <p className="text-ellipsis">daniel023@gmail.com</p>
             </div>
             <div>
               <p>
