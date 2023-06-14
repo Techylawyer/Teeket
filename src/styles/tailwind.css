@@ -1,79 +1,79 @@
 /* src/styles/tailwind.css */
-@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&family=Manrope:wght@400;500&family=Poppins:ital,wght@0,500;0,700;1,400;1,700;1,800&family=Roboto:ital@1&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&family=Manrope:wght@400;500&family=Poppins:ital,wght@0,500;0,700;1,400;1,700;1,800&family=Roboto:ital@1&display=swap"); */
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-.Container {
+/* .Container {
   @apply grid grid-cols-1 grid-rows-5 h-full;
   z-index: 0;
-}
+} */
 
-.Container h2 {
+/* .Container h2 {
   @apply font-login m-loginM text-2xl max-sm:text-fontLength;
-}
+} */
 
-.Header {
+/* .Header {
   @apply row-span-1 flex p-2 justify-around drop-shadow-md;
   z-index: 2;
   background-color: #ffff;
-}
-.Header img {
+} */
+/* .Header img {
   @apply md:w-logo1 mr-1.5  mb-1.5 mt-2 h-buttonH;
-}
+} */
 
-.Header button {
+/* .Header button {
   @apply w-button mr-1.5  mb-1.5 mt-2 rounded-xl text-base h-buttonH drop-shadow-lg;
-}
+} */
 
-.Section {
+/* .Section {
   @apply row-span-4;
-}
-.Section button {
+} */
+/* .Section button {
   @apply max-sm:w-googleS active:outline-0 rounded-lg w-google p-3 border-2;
   font-size: 22px;
-}
+} */
 
-.Input {
+/* .Input {
   @apply flex flex-col justify-center items-center;
-}
+} */
 
-.Input input {
+/* .Input input {
   @apply mb-input mt-input  max-sm:w-googleS w-google rounded-lg p-3;
   background-color: #ededed;
-}
+} */
 
-.Input button {
+/* .Input button {
   @apply rounded-lg font-light border-0;
   font-size: 20px;
-}
+} */
 
-.Horizontal {
+/* .Horizontal {
   @apply flex flex-row justify-center items-end m-auto;
-}
+} */
 
-.Horizontal span {
+/* .Horizontal span {
   @apply mt-4;
-}
+} */
 
-.Horizontal hr {
+/* .Horizontal hr {
   width: 25%;
-}
+} */
 
-.Footer {
+/* .Footer {
   @apply mt-4 font-login;
-}
+} */
 
-Footer a {
+/* Footer a {
   @apply font-semibold;
   color: #000;
-}
+} */
 
-.Section a.Google {
+/* .Section a.Google {
   @apply active:outline-0 rounded-lg p-3 border-2 flex justify-center items-center max-sm:w-googleS w-google m-auto;
-}
+} */
 
-.Section a.Google span {
+/* .Section a.Google span {
   font-size: 18px;
-}
+} */

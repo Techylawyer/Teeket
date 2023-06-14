@@ -621,9 +621,9 @@ video {
 .text-center{
   text-align: center;
 }
-.font-login{
+/* .font-login{
   font-family: Manrope;
-}
+} */
 .text-2xl{
   font-size: 1.5rem;
   line-height: 2rem;

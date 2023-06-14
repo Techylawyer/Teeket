@@ -7,7 +7,8 @@ import Home from "./Screens/Home";
 import LandingPage from "./LandingPage";
 import EventListingPage from "./Screens/EventListingPage";
 import { Container } from "./component/Container";
-
+import Insights from "./Insights";
+import Attendees from "./Attendees"
 
 function App() {
   return (
@@ -29,6 +30,9 @@ function App() {
         <Route path="/Landing" element={<LandingPage/>}/>
         <Route path="/Home" element={<Home/>}/>
         <Route path="/EventListing" element={<EventListingPage/>}/>
+        <Route path="/Insight" element={<Insights/>}/>
+        <Route path="/Attendees" element={<Attendees/>}/>
+
       </Routes>
       </BrowserRouter>
       </>

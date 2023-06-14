@@ -2,7 +2,7 @@ import React from 'react'
 import logo from '../src/images/teekettextlogo.png'
 import img1 from '../src/images/Image_one.png'
 import img2 from '../src/images/Image_two.png'
-import frame1 from '../src/images/Frame159.png'
+import frame1 from '../src/images/Frame 159.png'
 import frame2 from '../src/images/Frame160.png'
 import frame3 from '../src/images/Frame161.png'
 import '../src/styles/LandingPage.css'
@@ -39,6 +39,7 @@ function LandingPage() {
         >
           <div className="mb-8">
             <button
+              style={{ backgroundColor: '#001133' }}
               onClick={() => navigate('/Home')}
               type="button"
               className="btn-1 w-72 bg-blue-500 px-8 py-4 rounded-xl"
@@ -49,6 +50,7 @@ function LandingPage() {
           <div>
             <button
               type="button"
+              style={{backgroundColor: 'white'}}
               onClick={() => navigate('/Home')}
               className="btn-2 w-72 bg-white text-black px-8 py-4 rounded-xl"
             >

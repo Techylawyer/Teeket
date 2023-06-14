@@ -1,5 +1,5 @@
 import "../styles/main.css";
-import teeket from "../Images/teeket text logo.png";
+import teeket from "../imgs/TeeketLogo.png";
 import { Button } from "./Button";
 export function Header() {
   return (
