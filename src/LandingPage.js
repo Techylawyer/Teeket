@@ -7,8 +7,11 @@ import frame1 from '../src/images/Frame 159.png'
 import frame2 from '../src/images/Frame 160.png'
 import frame3 from '../src/images/Frame 161.png'
 import '../src/styles/LandingPage.css'
+import {useNavigate} from 'react-router-dom';
 
 function LandingPage() {
+  const navigate = useNavigate();
+
   return (
     <main className="flex justify-center items-center w-full">
       <article className="main-div text-white p-12">
@@ -48,6 +51,7 @@ function LandingPage() {
         >
           <div className="my-6">
             <button
+              onClick={() => navigate('/Home')}
               type="button"
               className="btn-1 w-72 bg-blue-800 px-8 py-4 rounded-xl"
             >
@@ -57,6 +61,7 @@ function LandingPage() {
           <div>
             <button
               type="button"
+              onClick={() => navigate('/Home')}
               className="btn-2 w-72 bg-white text-black px-8 py-4 rounded-xl"
             >
               Discover events

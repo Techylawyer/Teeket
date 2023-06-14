@@ -4,13 +4,16 @@ import Homepageslider from './Homepageslider';
 import Features from './Features';
 import PhoneScreen from './Routes/PhoneScreen';
 import BackgroundImage from "../imgs/BackGroundImage.jpg"
+import {useNavigate} from 'react-router-dom';
 
 
 
 function Home() {
+  const navigate = useNavigate();
+
   return (
     <div>
-      <header className='flex items-center justify-between mx-2'>
+      <header className='flex items-center justify-between mx-2 mt-2'>
         <img className='md:h-14 md:w-20 h-10 w-16' src={TeeketLogo} alt='teeketLogo' />
         <button className='md:bg-green-300 bg-blue-500 text-white md:p-4 p-2 rounded-lg'
         style={{ backgroundColor: '#001133' }}>
@@ -37,7 +40,10 @@ function Home() {
           <p className='md:text-xl text-sm text-white '> - with the only event platform you need</p>
         </div>
         <div className='mx-12 pb-12'>
-          <button type="submit" className="bg-blue-500 text-white px-4 py-2 block md:text-xl text-lg rounded-lg md:h-14 h-12 w-full mx-auto my-8">
+          <button 
+          onClick={() => navigate('/EventListing')}
+          style={{backgroundColor: '#3b82f6'}}
+          type="submit" className="text-white px-4 py-2 block md:text-xl text-lg rounded-lg md:h-14 h-12 w-full mx-auto my-8">
             Create an event
           </button>
         </div>
