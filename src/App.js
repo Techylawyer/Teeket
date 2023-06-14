@@ -9,8 +9,6 @@ import EventListingPage from "./Screens/EventListingPage";
 import { Container } from "./component/Container";
 
 
-
-
 function App() {
   return (
     // <BrowserRouter>

@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{js,jsx}"],
+  content: ["./src/**/*.{js,jsx,css}"],
   presets: [],
   darkMode: 'media', // or 'class'
   theme: {
@@ -550,15 +550,26 @@ module.exports = {
           transform: 'rotate(360deg)',
         },
       },
-      margin: {
-        loginM: "6rem",
-        input: "30px",
+      ping: {
+        '75%, 100%': {
+          transform: 'scale(2)',
+          opacity: '0',
+        },
       },
-      height: {
-        buttonH: "70px",
+      pulse: {
+        '50%': {
+          opacity: '.5',
+        },
       },
-      fontSize: {
-        fontLength: "20px",
+      bounce: {
+        '0%, 100%': {
+          transform: 'translateY(-25%)',
+          animationTimingFunction: 'cubic-bezier(0.8,0,1,1)',
+        },
+        '50%': {
+          transform: 'none',
+          animationTimingFunction: 'cubic-bezier(0,0,0.2,1)',
+        },
       },
     },
     letterSpacing: {
