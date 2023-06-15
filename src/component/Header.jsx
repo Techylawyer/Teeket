@@ -3,7 +3,7 @@ import "../styles/Tina.css";
 // import { Button } from "./Button";
 import TeeketLogo from '../imgs/TeeketLogo.png';
 
-export function Header() {
+export default function Header() {
   return (
     // <header className="Header">
     //   <img src={teeket} alt="logo" />

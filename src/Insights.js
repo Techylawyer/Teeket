@@ -6,12 +6,15 @@ import img5 from '../src/images/image-five.jpg'
 import { GoChevronLeft, GoChevronDown } from 'react-icons/go'
 import { BsInfoCircle } from 'react-icons/bs'
 import '../src/styles/Insights.css'
+import {useNavigate} from 'react-router-dom';
 
 function Insights() {
+  const navigate = useNavigate();
+
   return (
     <main className="w-screen h-screen flex justify-center items-center bg-white md:text-base text-sm">
       <article className="px-5">
-        <section className="flex gap-3 my-4">
+        <section className="flex gap-3 my-4" onClick={() => navigate('/EventListing')}>
           <GoChevronLeft className="text-2xl" />
           <p>Go back</p>
         </section>
@@ -23,7 +26,7 @@ function Insights() {
               See all registered attendees details
             </p>
           </div>
-          <div className="flex justify-between bg-gray-200 p-2 gap-3 rounded-xl">
+          <div className="flex justify-between bg-gray-200 p-2 gap-3 rounded-xl" onClick={() => navigate('/EventListing')}>
             <p>Past month </p>
             <GoChevronDown className="text-2xl" />
           </div>

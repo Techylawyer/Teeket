@@ -51,7 +51,7 @@ function LandingPage() {
             <button
               type="button"
               style={{backgroundColor: 'white'}}
-              onClick={() => navigate('/Home')}
+              onClick={() => navigate('/EventListing')}
               className="btn-2 w-72 bg-white text-black px-8 py-4 rounded-xl"
             >
               Discover events

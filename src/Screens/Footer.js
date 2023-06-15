@@ -31,7 +31,7 @@ function Footer() {
           </div>
           <div className=' flex justify-center items-center py-8'>
           <button 
-          onClick={() => navigate('/EventListing')}
+          onClick={() => navigate('/Attendees')}
           style={{backgroundColor: 'white'}}
            type="submit" className="text-blue-500 block text-bold md:text-xl text-lg flex items-center justify-center block rounded-lg md:h-14 h-12 md:w-1/4 w-1/2 py-6 px-6">
             Book an event

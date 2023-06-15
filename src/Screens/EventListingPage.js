@@ -120,6 +120,7 @@ function EventListingPage() {
   </div>
         <div className='mx-4'>
            <button type="submit" className=" px-4 py-2 block md:text-xl text-lg rounded-lg md:h-14 h-12 w-full mx-auto my-8" 
+           onClick={() => navigate('/Insights')}
            style={{backgroundColor: '#E1E4EB'}}>
             Discover More
           </button>
@@ -156,7 +157,7 @@ function EventListingPage() {
     </div>
     <div className='mx-4'>
            <button 
-           onClick={() => navigate('/Home')}
+           onClick={() => navigate('/Attendees')}
            type="submit" className=" px-4 py-2 block md:text-xl text-lg rounded-lg md:h-14 h-12 w-full mx-auto my-8" 
            style={{backgroundColor: '#E1E4EB'}}>
             Discover More
