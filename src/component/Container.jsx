@@ -51,6 +51,7 @@ export function Container() {
       const result = await signInWithPopup(auth, provider);
       const user = result.user;
       // You can now access the user object, perform additional actions, and navigate to the desired route
+      console.log(user);
       navigate("/Home");
     } catch (error) {
       alert(error.code, error.message);

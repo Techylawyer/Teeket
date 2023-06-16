@@ -28,7 +28,7 @@ export function Footers() {
       <div>
         <div
           className="mt-8 text-center"
-          style={{ backgroundColor: "#D0DBF1", fontSize: 12 , padding: 5}}
+          style={{ backgroundColor: "#D0DBF1", fontSize: 12 , padding: 20}}
         >
           Hertechtrail cohort 6 Capstone project
           <p>
