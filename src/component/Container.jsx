@@ -1,8 +1,7 @@
-
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { initializeApp } from 'firebase/app';
-import { getAuth, createUserWithEmailAndPassword } from 'firebase/auth';
+import { getAuth, createUserWithEmailAndPassword, signInWithPopup, GoogleAuthProvider } from 'firebase/auth';
 import { getAnalytics } from 'firebase/analytics';
 import '../styles/Tina.css';
 import Button from './Button';
@@ -44,15 +43,32 @@ export function Container() {
     }
   };
 
+  const onGoogleClick = async (event) => {
+    event.preventDefault();
+    const auth = getAuth();
+    const provider = new GoogleAuthProvider();
+    try {
+      const result = await signInWithPopup(auth, provider);
+      const user = result.user;
+      // You can now access the user object, perform additional actions, and navigate to the desired route
+      navigate("/Home");
+    } catch (error) {
+      alert(error.code, error.message);
+      console.log(error.code, error.message);
+    }
+  };
+
   return (
-    <div className="Container"style={{marginTop: -40}}>
+    <div className="Container" style={{ marginTop: -40 }}>
       <Header />
-      <div className="Section" style={{paddingTop: -15}}>
-        <h2 style={{textAlign: 'center'}}>Login Screen signup to continue</h2>
-        <a className="Google" href=" ">
-          <img src={Googlei} alt=""/>
-          <span>Continue with Google</span>{" "}
-        </a>
+      <div className="Section" style={{ paddingTop: -15 }}>
+        <h2 style={{ textAlign: 'center' }}>Login Screen signup to continue</h2>
+        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', alignContent: 'center', justifyContent: 'center', gap: '15px' }}>
+  <button className="Google" onClick={onGoogleClick} style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'center', gap: '10%' }}>
+    <img src={Googlei} alt="" style={{ alignSelf: 'center' }} />
+    <span style={{ alignSelf: 'center' }}>Continue with Google</span>{" "}
+  </button>
+</div>
         <Horizontal />
         <div>
           <form className="Input" onSubmit={onEmailClick}>
@@ -63,7 +79,7 @@ export function Container() {
               onChange={(e) => setEmail(e.target.value)}
               name="email"
               autoComplete="off"
-              style={{marginTop: 5}}
+              style={{ marginTop: 5 }}
             />
             <input
               type="password"
