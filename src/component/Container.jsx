@@ -45,10 +45,10 @@ export function Container() {
   };
 
   return (
-    <div className="Container">
+    <div className="Container"style={{marginTop: -40}}>
       <Header />
-      <div className="Section">
-        <h2>Login Screen signup to continue</h2>
+      <div className="Section" style={{paddingTop: -15}}>
+        <h2 style={{textAlign: 'center'}}>Login Screen signup to continue</h2>
         <a className="Google" href=" ">
           <img src={Googlei} alt=""/>
           <span>Continue with Google</span>{" "}
@@ -63,6 +63,7 @@ export function Container() {
               onChange={(e) => setEmail(e.target.value)}
               name="email"
               autoComplete="off"
+              style={{marginTop: 5}}
             />
             <input
               type="password"

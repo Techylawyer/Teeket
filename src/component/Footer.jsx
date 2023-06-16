@@ -4,7 +4,7 @@ import "../styles/Tina.css";
 export function Footers() {
   return (
     <footer className="Footer">
-    <div className="flex justify-center items-center">
+    <div className="flex justify-center items-center" style={{fontSize:12, marginTop: -5}}>
       <div>
                     <p>By continuing, you acknowledge that you have read</p>
       <p>
@@ -28,7 +28,7 @@ export function Footers() {
       <div>
         <div
           className="mt-8 text-center"
-          style={{ backgroundColor: "#D0DBF1" }}
+          style={{ backgroundColor: "#D0DBF1", fontSize: 12 , padding: 5}}
         >
           Hertechtrail cohort 6 Capstone project
           <p>

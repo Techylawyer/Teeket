@@ -11,7 +11,7 @@ function Attendees() {
       <section className="header"></section>
 
       <section>
-        <h2 className="text-5xl font-bold my-8 mx-8 overflow-y-hidden">
+        <h2 className="text-5xl font-bold my-8 mx-8 overflow-y-hidden text-white">
           Book Your Events with <span className="text-blue-500">Teeket</span>
         </h2>
         <p className="text-gray-400 text-xl capitalize mx-8">
@@ -22,7 +22,7 @@ function Attendees() {
       </section>
 
       <section>
-        <h4 className="text-2xl mb-12 font-bold mx-8">Trending Events</h4>
+        <h4 className="text-2xl mb-12 font-bold mx-8 text-white">Trending Events</h4>
         <img src={event} alt="events" className="w-10/12 mx-8" />
         <div className="mx-8">
           <button className="px-6 py-4 w-full text-white text-xl font-medium bg-blue-500 my-8 rounded-full">
@@ -32,7 +32,7 @@ function Attendees() {
       </section>
 
       <section>
-        <p className="font-bold italic text-xl text-center mb-8 capitalize mx-8">
+        <p className="font-bold italic text-xl text-center mb-8 capitalize mx-8 text-white">
           More than 1000+ Leading Event Companies Choose Teeket
         </p>
         <div>

@@ -9,7 +9,7 @@ export default function Header() {
     //   <img src={teeket} alt="logo" />
     //   <Button bg="#001133" label="Menu" color="#FFFFFF"/>
     // </header>
-    <header className='flex items-center justify-between mx-2'>
+    <header className='flex items-center justify-between mx-2' style={{marginTop: -25, marginBottom: -40}}>
         <img className='md:h-14 md:w-20 h-10 w-16' src={TeeketLogo} alt='teeketLogo' />
         <button className='md:bg-green-300 bg-blue-500 text-white md:p-4 p-2 rounded-lg'
         style={{ backgroundColor: '#001133' }}>
