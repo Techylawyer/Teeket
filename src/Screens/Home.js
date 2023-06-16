@@ -1,24 +1,21 @@
 import React from 'react';
-import TeeketLogo from '../imgs/TeeketLogo.png';
 import Homepageslider from './Homepageslider';
 import Features from './Features';
 import PhoneScreen from './Routes/PhoneScreen';
 import BackgroundImage from "../imgs/BackGroundImage.jpg"
 import {useNavigate} from 'react-router-dom';
+import TeeketHeader from './TeeketHeader';
+
 
 
 
 function Home() {
   const navigate = useNavigate();
 
+
   return (
     <div>
-      <header className='flex items-center justify-between mx-2 mt-2'>
-        <img className='md:h-14 md:w-20 h-10 w-16' src={TeeketLogo} alt='teeketLogo' />
-        <button className='md:bg-green-300 bg-blue-500 text-white md:p-4 p-2 rounded-lg'
-        style={{ backgroundColor: '#001133' }}>
-        Menu</button>
-      </header>
+      <TeeketHeader/>
             <section className="relative" style={{borderBottomLeftRadius: 30, borderBottomRightRadius: 30}}>
         <div
           className="absolute inset-0 bg-blue-900 opacity-80"

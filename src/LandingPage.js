@@ -14,8 +14,8 @@ function LandingPage() {
   return (
     <main className="w-screen h-screen flex justify-center items-center text-base text-white">
       <article className="px-8">
-        <section id="logo">
-          <img src={logo} alt="" className="d-block mx-auto w-4/12 my-8" />
+        <section id="logo" style={{paddingTop: 22}}>
+          <img src={logo} alt="" className="d-block mx-auto my-8"  style={{width: '25%'}}/>
         </section>
 
         <section id="images" className="grid grid-cols-5 grid-rows-2 gap-3">
@@ -39,8 +39,8 @@ function LandingPage() {
         >
           <div className="mb-8">
             <button
-              style={{ backgroundColor: '#001133' }}
-              onClick={() => navigate('/Home')}
+              style={{ backgroundColor: 'blue' }}
+              onClick={() => navigate('/Container')}
               type="button"
               className="btn-1 w-72 bg-blue-500 px-8 py-4 rounded-xl"
             >

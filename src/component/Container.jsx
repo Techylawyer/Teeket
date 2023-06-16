@@ -37,7 +37,7 @@ export function Container() {
 
     try {
       await createUserWithEmailAndPassword(auth, email, password);
-      navigate("/Landing");
+      navigate("/Home");
     } catch (error) {
       alert(error.code, error.message);
       console.log(error.code, error.message);

@@ -26,8 +26,8 @@ function App() {
           <>
       <BrowserRouter>
       <Routes>
-        <Route exact path="/" element={<Container/>}/>
-        <Route path="/Landing" element={<LandingPage/>}/>
+        <Route exact path="/" element={<LandingPage/>}/>
+        <Route path="/Container" element={<Container/>}/>
         <Route path="/Home" element={<Home/>}/>
         <Route path="/EventListing" element={<EventListingPage/>}/>
         <Route path="/Insights" element={<Insights/>}/>
