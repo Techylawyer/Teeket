@@ -7,12 +7,12 @@ import '../src/styles/Attendees.css'
 
 function Attendees() {
   return (
-    <main className="w-screen h-screen text-base">
+    <main className="w-screen h-screen text-base bg-white">
       <section className="header"></section>
 
       <section>
-        <h2 className="text-5xl font-bold my-8 mx-8 overflow-y-hidden text-white">
-          Book Your Events with <span className="text-blue-500">Teeket</span>
+        <h2 className="text-5xl font-bold my-8 mx-8 overflow-y-hidden">
+          Book Your Events with <span className="text-primary">Teeket</span>
         </h2>
         <p className="text-gray-400 text-xl capitalize mx-8">
           Your one stop platform to create, manage and promote your events at
@@ -22,10 +22,12 @@ function Attendees() {
       </section>
 
       <section>
-        <h4 className="text-2xl mb-12 font-bold mx-8 text-white">Trending Events</h4>
+        <h4 className="text-2xl mb-12 font-bold mx-8">
+          Trending Events
+        </h4>
         <img src={event} alt="events" className="w-10/12 mx-8" />
         <div className="mx-8">
-          <button className="px-6 py-4 w-full text-white text-xl font-medium bg-blue-500 my-8 rounded-full">
+          <button className="px-6 py-4 w-full text-white text-xl font-medium bg-primary my-8 rounded-full">
             Discover More
           </button>
         </div>

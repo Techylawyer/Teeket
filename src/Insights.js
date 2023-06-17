@@ -14,7 +14,10 @@ function Insights() {
   return (
     <main className="w-screen h-screen flex justify-center items-center bg-white md:text-base text-sm">
       <article className="px-5">
-        <section className="flex gap-3 my-4" onClick={() => navigate('/EventListing')}>
+        <section
+          className="flex gap-3 my-4"
+          onClick={() => navigate('/EventListing')}
+        >
           <GoChevronLeft className="text-2xl" />
           <p>Go back</p>
         </section>
@@ -26,7 +29,10 @@ function Insights() {
               See all registered attendees details
             </p>
           </div>
-          <div className="flex justify-between bg-gray-200 p-2 gap-3 rounded-xl" onClick={() => navigate('/EventListing')}>
+          <div
+            className="flex justify-between bg-gray-200 p-2 gap-3 rounded-xl"
+            onClick={() => navigate('/EventListing')}
+          >
             <p>Past month </p>
             <GoChevronDown className="text-2xl" />
           </div>
