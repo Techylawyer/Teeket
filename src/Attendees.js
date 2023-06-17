@@ -34,7 +34,7 @@ function Attendees() {
       </section>
 
       <section>
-        <p className="font-bold italic text-xl text-center mb-8 capitalize mx-8 text-white">
+        <p className="font-bold italic text-xl text-center mb-8 capitalize mx-8">
           More than 1000+ Leading Event Companies Choose Teeket
         </p>
         <div>
