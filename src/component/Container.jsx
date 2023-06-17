@@ -60,16 +60,19 @@ export function Container() {
   };
 
   return (
-    <div className="Container" style={{ marginTop: -40 }}>
+    <div className="Container">
       <Header />
-      <div className="Section" style={{ paddingTop: -15 }}>
-        <h2 style={{ textAlign: 'center' }}>Login Screen signup to continue</h2>
-        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', alignContent: 'center', justifyContent: 'center', gap: '15px' }}>
-  <button className="Google" onClick={onGoogleClick} style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'center', gap: '10%' }}>
-    <img src={Googlei} alt="" style={{ alignSelf: 'center' }} />
-    <span style={{ alignSelf: 'center' }}>Continue with Google</span>{" "}
-  </button>
-</div>
+      <div className="Section -pt-15">
+        <h2 className="text-center font-bold">Login or signup to continue</h2>
+        <div className="flex flex-col items-center content-center justify-center gap-4">
+          <button
+            className="Google flex flex-row items-center justify-center gap-4"
+            onClick={onGoogleClick}
+          >
+            <img src={Googlei} alt="" style={{ alignSelf: 'center' }} />
+            <span className="self-center">Continue with Google</span>{' '}
+          </button>
+        </div>
         <Horizontal />
         <div>
           <form className="Input" onSubmit={onEmailClick}>
@@ -80,7 +83,7 @@ export function Container() {
               onChange={(e) => setEmail(e.target.value)}
               name="email"
               autoComplete="off"
-              style={{ marginTop: 5 }}
+              className="mt-5"
             />
             <input
               type="password"
@@ -91,11 +94,17 @@ export function Container() {
               autoComplete="off"
             />
             <br />
-            <Button label="Continue with email" bg="#0052F6" color="#FFFFFF" type="submit" />
+            <Button
+              label="Continue with email"
+              bg="#0052F6"
+              color ="#FFFFFF"
+              className="bg-primary text-white font-bold"
+              type="submit"
+            />
           </form>
         </div>
         <Footers />
       </div>
     </div>
-  );
+  )
 }

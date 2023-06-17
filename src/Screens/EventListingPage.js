@@ -51,7 +51,7 @@ function EventListingPage() {
         </button>
       </header>
       <div className='flex flex-col items-center mt-8'>
-        <h1 className='md:text-center text-start md:text-4xl text-xl '>Discover events near you </h1>
+        <h1 className='md:text-center text-start md:text-2xl text-xl '>Discover events near you </h1>
         <div className='relative w-full flex justify-center items-center mt-8 flex-row gap-4'>
   <section className='flex justify-center'>
     <input

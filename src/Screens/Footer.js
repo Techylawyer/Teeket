@@ -39,7 +39,7 @@ function Footer() {
           </div>
         </div>
     <div className="mt-8 text-center text-white">
-      Hertechtrail cohort 6 Capstone project
+      HerTechTrail Frontend Development Pro Cohort 6 Capstone project
       <p>
         Designed by{' '}
         <span className="font-bold">Team 7</span>

@@ -30,7 +30,7 @@ export function Footers() {
           className="mt-8 text-center"
           style={{ backgroundColor: "#D0DBF1", fontSize: 12 , padding: 20}}
         >
-          Hertechtrail cohort 6 Capstone project
+          HerTechTrail Frontend Pro Cohort 6 Capstone project
           <p>
             Designed by <span className="font-bold">Team 7</span>
           </p>

@@ -30,9 +30,8 @@ function Home() {
             borderBottomLeftRadius: 30, borderBottomRightRadius: 30
           }}
         />
-        <div className='mx-2 mt-6 pt-12 text-center'>
-          <p className='md:text-4xl text-lg text-white font-bold'> Struggling to sell</p>
-          <p className='md:text-4xl text-lg text-white font-bold'> tickets?</p>
+        <div className='mx-2 mt-12 pt-12 text-center'>
+          <p className='md:text-2xl text-white font-bold overflow-y-hidden'> Struggling to sell tickets?</p>
           <p className='md:text-xl text-sm text-white mt-4'> Create events and sell tickets in minutes - at no cost</p>
           <p className='md:text-xl text-sm text-white '> - with the only event platform you need</p>
         </div>
@@ -46,8 +45,7 @@ function Home() {
         </div>
       </section>
       <div className='flex flex-col items-center mt-8'>
-        <h1 className='text-center md:text-4xl text-xl font-bold'>Empowering event creators </h1>
-        <h1 className='text-center md:text-4xl text-xl font-bold'>everywhere</h1>
+        <h1 className='text-center md:text-2xl mb-4 text-xl font-bold'>Empowering event creators everywhere</h1>
         <p className='text-center md:text-lg text-sm font-semibold'>More than 1 million people across 5 continents </p>
         <p className='text-center md:text-lg text-sm font-semibold'>choose teeket</p>
       </div>
